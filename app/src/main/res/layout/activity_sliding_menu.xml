@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="com.mylibs.code.mylibs.ui.SlidingMenuActivity">
+
+	<android.support.v7.widget.Toolbar
+		android:id="@+id/toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/colorAccent"
+		android:minHeight="?actionBarSize"
+		android:fitsSystemWindows="true">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="SlidingMenu"
+			android:textColor="@color/white"/>
+
+		<ImageButton
+			android:id="@+id/mToggleMenu"
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:src="@android:drawable/ic_menu_always_landscape_portrait"
+			/>
+	</android.support.v7.widget.Toolbar>
+
+	<com.lemonade.widgets.slidesidemenu.SlideSideMenuTransitionLayout
+		android:id="@+id/mSlideMenu"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@id/toolbar">
+		<!-- menu container -->
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@color/colorPrimary"
+			android:orientation="vertical">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="mune1"
+				android:textColor="#ffffff"
+				android:textSize="12dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="20dp"
+				android:layout_marginTop="20dp"
+				android:text="mune2"
+				android:textColor="#ffffff"
+				android:textSize="12dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="mune3"
+				android:textColor="#ffffff"
+				android:textSize="12dp"/>
+
+		</LinearLayout>
+
+		<com.lemonade.widgets.slidesidemenu.SlideSideMenuContentCardView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<FrameLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="@color/colorAccent"
+				android:orientation="vertical">
+
+
+			</FrameLayout>
+		</com.lemonade.widgets.slidesidemenu.SlideSideMenuContentCardView>
+	</com.lemonade.widgets.slidesidemenu.SlideSideMenuTransitionLayout>
+
+</RelativeLayout>

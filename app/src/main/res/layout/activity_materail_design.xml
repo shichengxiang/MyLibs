@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:gravity="center_horizontal"
+	android:orientation="vertical"
+	tools:context="com.mylibs.code.mylibs.ui.MaterailDesignActivity">
+
+	<android.support.v7.widget.Toolbar
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:fitsSystemWindows="true"
+		android:minHeight="?actionBarSize"
+		android:background="@color/colorAccent"
+		app:contentInsetStart="@dimen/zero">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<ImageView
+				android:id="@+id/mBack"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:focusable="true"
+				android:clickable="true"
+				android:layout_centerVertical="true"
+				android:src="@drawable/ic_back"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="material design"
+				android:textColor="@color/white"
+				android:layout_centerInParent="true"
+				android:textSize="@dimen/text1"/>
+
+		</RelativeLayout>
+
+	</android.support.v7.widget.Toolbar>
+
+	<Button
+		android:id="@+id/mToNavigation"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:onClick="click"
+		android:text="侧滑+NavigationView"/>
+
+	<Button
+		android:id="@+id/mToScrolling"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="AppBarLayout+Scrolling"
+		android:onClick="click"/>
+
+</LinearLayout>

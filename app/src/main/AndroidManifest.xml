@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+		  package="com.mylibs.code.mylibs">
+
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
+
+	<application
+		android:allowBackup="true"
+		android:icon="@mipmap/ic_launcher"
+		android:label="@string/app_name"
+		android:supportsRtl="true"
+		android:theme="@style/MyTheme">
+		<activity android:name=".ui.MainActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
+
+				<category android:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity android:name=".ui.RefreshActivity">
+
+			<!-- 下拉刷新 -->
+		</activity>
+		<activity android:name=".ui.SlidingMenuActivity">
+
+			<!-- 侧滑菜单 -->
+		</activity>
+		<activity android:name=".ui.UpdateAppActivity">
+		</activity>
+		<activity android:name=".custom.MainActivity"/>
+		<activity android:name=".ui.MaterailDesignActivity">
+		</activity>
+		<activity
+			android:name=".ui.materail.NavigationActivity"
+			android:label="@string/title_activity_navigation"
+			android:theme="@style/MyTheme">
+		</activity>
+		<activity
+			android:name=".ui.materail.ScrollingActivity"
+			android:label="@string/title_activity_scrolling"
+			android:theme="@style/MyTheme">
+		</activity>
+	</application>
+
+</manifest>

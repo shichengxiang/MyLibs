@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	tools:context="com.mylibs.code.mylibs.ui.RefreshActivity">
+
+	<com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+		android:id="@+id/mRefreshLayout"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		app:tr_enable_loadmore="true"
+		android:background="@color/Blue">
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="2000dp"
+			android:text="刷新数据"
+			android:gravity="center"
+			android:background="@color/Orange"/>
+
+	</com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+
+</RelativeLayout>
